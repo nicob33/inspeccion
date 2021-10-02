@@ -25,6 +25,7 @@ function elegir1(){
 }
 
 function addElement(){
+    cantDatos ++;
     if(cantElement == 1){
         document.getElementById("borrar-element1").innerHTML += `<br><div class="col-md-3"><button onclick="deletedElement(this)" name="element-completed1" typle="button" class="btn btn-danger justify-content-md-end"><i class="fas fa-trash-alt"></i></button></div>` ;
     }
@@ -36,7 +37,7 @@ function addElement(){
                 <div class="col-mb-3">
                     <label for="select-element${cantElement}" class="form-label">ELEMENTO</label>
                     <select id="select-element${cantElement}" class="form-select" onchange="elegir2()">
-                        <option value="Nada">Seleccione un elemento</option>
+                        <option value="Nada">-- Seleccione un elemento --</option>
                         <option value="Capó">Capó</option>
                         <option value="Faro derecho">Faro derecho</option>
                         <option value="Faro izquierdo">Faro izquierdo</option>
@@ -89,13 +90,12 @@ function elegir2(){
             <input type="number" class="form-control" id="pintura${cantDatos}">
         </div>
         `
-        cantDatos ++;
+        
         document.getElementById("add-element").innerHTML =`
             <button class="btn btn-primary" type="button" onclick="addElement()">Agregar elemento <i class="fas fa-plus"></i></button>
         `
     }else{
         document.getElementById("datos-element"+cantDatos).innerHTML = ''; 
-        document.getElementById("add-element").innerHTML = '';
     }
 }
 
