@@ -1,0 +1,16 @@
+#logo-far{
+    width: 100px;
+}
+#titulo{
+    display: inline;
+    padding-left: 45%;
+
+}
+
+#averias{
+    text-align: center;
+}
+
+th,td{
+    text-align: center;
+}

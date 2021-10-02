@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="icon" href="img/inspec-icon.ico">
+    <title>Inspeccion</title>
+    <script src="js/jspdf.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-11">
+                <img src="img/logo-far.png" class="rounded float-end" id="logo-far">
+                <h3 id="titulo">INSPECCION</h3>
+                <br>
+                <p id="motivo-inspec"><b>MOTIVO DE INSPECCION: </b>Seguro nuevo</p>
+                <hr>
+                <form id="form">
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            VEHICULO
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" >
+                          <div class="accordion-body">
+                            <table class="table table-bordered border-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Marca</th>
+                                        <th scope="col">Modelo</th>
+                                        <th scope="col">Matricula</th>
+                                        <th scope="col">Padrón</th>
+                                        <th scope="col">Combustible</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Suzuki</td>
+                                        <td>Celerio</td>
+                                        <td>SNA5698</td>
+                                        <td>2154252525</td>
+                                        <td>NAFTA</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered border-dark next-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">N° de motor</th>
+                                        <th scope="col">N° de chasis</th>
+                                        <th scope="col">Color</th>
+                                        <th scope="col">Kilometraje</th>
+                                        <th scope="col">C.C<sup>3</sup></th>
+                                        <th scope="col">Año</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1242353463</td>
+                                        <td>34363636634</td>
+                                        <td>Blanco</td>
+                                        <td>89000</td>
+                                        <td>124</td>
+                                        <td>2015</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered border-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Localidad</th>
+                                        <th scope="col">Departamento</th>
+                                        <th scope="col">Cód. Postal</th>
+                                        <th scope="col">Teléfono</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Uruguay</td>
+                                        <td>Montevideo</td>
+                                        <td>11600</td>
+                                        <td>094102388</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered border-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Uso de vehículo</th>
+                                        <th scope="col">N° de puertas</th>
+                                        <th scope="col">Tipo de transporte</th>
+                                        <th scope="col">Tipo de vehículo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Particular</td>
+                                        <td>Cinco puertas</td>
+                                        <td>Personas</td>
+                                        <td>Sedan</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <hr>
+
+
+
+                    <h4 id="averias">AVERIAS</h4>
+                    <div id="averias-element">
+                        <div class="row mb-3" id="element-completed1">
+                            <div class="col-mb-3">
+                                <label for="select-element1" class="form-label">ELEMENTO</label>
+                                <select id="select-element1" class="form-select" onchange="elegir1()">
+                                    <option value="Nada">Seleccione un elemento</option>
+                                    <option value="Capó">Capó</option>
+                                    <option value="Faro derecho">Faro derecho</option>
+                                    <option value="Faro izquierdo">Faro izquierdo</option>
+                                    <option value="Faro/señalero del. der.">Faro/señalero del. der.</option>
+                                    <option value="Faro/señalero del. izq.">Faro/señalero del. izq.</option>
+                                    <option value="Panel delantero">Panel delantero</option>
+                                    <option value="Paragolpes delantero">Paragolpes delantero</option>
+                                    <option value="Careta">Careta</option>
+                                    <option value="Guardabarro del. derecho">Guardabarro del. derecho</option>
+                                    <option value="Puerta del. derecha">Puerta del. derecha</option>
+                                    <option value="Puerta tras. derecha">Puerta tras. derecha</option>
+                                    <option value="Lateral derecho">Lateral derecho</option>
+                                    <option value="Zócalo derecho">Zócalo derecho</option>
+                                    <option value="Guardabarro tras. derecho">Guardabarro tras. derecho</option>
+                                    <option value="Puerta baúl/portón trasero">Puerta baúl/portón trasero</option>
+                                    <option value="Panel trasero">Panel trasero</option>
+                                    <option value="Faro/señalero tras.der.">Faro/señalero tras.der.</option>
+                                    <option value="Faro/señalero tras.izq">Faro/señalero tras.izq</option>
+                                    <option value="Guardabarro tras. izq.">Guardabarro tras. izq.</option>
+                                    <option value="Zócalo izquierdo">Zócalo izquierdo</option>
+                                    <option value="Lateral izquierdo">Lateral izquierdo</option>
+                                    <option value="Puerta tras. izquierda">Puerta tras. izquierda</option>
+                                    <option value="Puerta del. izquierda">Puerta del. izquierda</option>
+                                    <option value="Guardabarro de. izquierdo">Guardabarro de. izquierdo</option>
+                                    <option value="Techo / Capota">Techo / Capota</option>
+                                    <option value="Pintura generañ">Pintura generañ</option>
+                                </select>
+                            </div>
+                            <div id="datos-element1">
+                            </div>
+                            <div id="borrar-element1">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="d-grid gap-2 col-6 mx-auto" id="add-element">
+                    </div>
+                    <!-- <div class="row mb-3">
+                        <div class="col-md-3">
+                            <label for="nombre" class="form-label">Nombres</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="apellido2" class="form-label">Apellido2</label>
+                            <input type="text" class="form-control" id="apellido2">
+                        </div>
+                    </div> -->
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
