@@ -26,9 +26,6 @@ function elegir1(){
 
 function addElement(){
     cantDatos ++;
-    if(cantElement == 1){
-        document.getElementById("borrar-element1").innerHTML += `<br><div class="col-md-3"><button onclick="deletedElement(this)" name="element-completed1" typle="button" class="btn btn-danger justify-content-md-end"><i class="fas fa-trash-alt"></i></button></div>` ;
-    }
     cantElement ++;
     document.getElementById("averias-element").insertAdjacentHTML('beforeend', `
           
@@ -103,5 +100,41 @@ function deletedElement(item) {
     let idDeleted = item.name
     document.getElementById(idDeleted).innerHTML = ''
 }
-//<i class="fas fa-trash-alt"></i>
 
+
+//////////////////////////////////// dibujo
+
+
+function loadImage(url){
+    return new Promise(resolve =>{
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.responseType = "blob";
+        xhr.onload = function (e){
+            const reader = new FileReader();
+            reader.onload = function (event){
+                const res = event.target.result;
+                resolve(res);
+            }
+            const file = this.response;
+            reader.readAsDataURL(file);
+        }
+        xhr.send();
+    })
+}
+
+let signaturePad = null;
+
+
+window.addEventListener('load',async() =>{
+
+    const canvas = document.getElementById("signature-canvas-derecho");
+    canvas.height = canvas.offsetHeight
+    canvas.whidth = canvas.offsetWidth
+
+    signaturePad = new SignaturePad(canvas,{});
+
+    const image = await loadImage("img/formulario.jpg")
+    console.log(image)
+
+});
