@@ -105,23 +105,6 @@ function deletedElement(item) {
 //////////////////////////////////// dibujo
 
 
-function loadImage(url){
-    return new Promise(resolve =>{
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', url, true);
-        xhr.responseType = "blob";
-        xhr.onload = function (e){
-            const reader = new FileReader();
-            reader.onload = function (event){
-                const res = event.target.result;
-                resolve(res);
-            }
-            const file = this.response;
-            reader.readAsDataURL(file);
-        }
-        xhr.send();
-    })
-}
 
 let signaturePad = null;
 
@@ -134,7 +117,6 @@ window.addEventListener('load',async() =>{
 
     signaturePad = new SignaturePad(canvas,{});
 
-    const image = await loadImage("img/formulario.jpg")
-    console.log(image)
+   
 
 });
