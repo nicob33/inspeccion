@@ -23,10 +23,82 @@ th,td{
     border: 1px dashed red;
     width: 273px;
     height: 125px;
+    cursor: crosshair;
     background-image: url(../img/derecho.jpg) ;
 }
 
-#signature-derecho{
+#signature-canvas-izquierdo{
+    border: 1px dashed red;
     width: 273px;
     height: 125px;
+    margin-top: 60px;
+    cursor: crosshair;
+    background-image: url(../img/izquierdo.jpg) ;
+}
+
+#signature-canvas-frontal{
+    border: 1px dashed red;
+    width: 175px;
+    height: 125px;
+    margin-top: 60px;
+    cursor: crosshair;
+    background-image: url(../img/frontal.jpg) ;
+}
+
+#signature-canvas-posterior{
+    border: 1px dashed red;
+    width: 175px;
+    height: 125px;
+    cursor: crosshair;
+    background-image: url(../img/posterior.jpg) ;
+}
+
+#signature-canvas-techo{
+    border: 1px dashed red;
+    width: 131px;
+    height: 264px;
+    cursor: crosshair;
+    background-image: url(../img/techo.jpg) ;
+}
+
+
+#costado{
+    width: 274px;
+    height: 400px;
+    display: inline-block;
+    margin-right: 80px;
+    margin-left: 40px;
+}
+
+#techo{
+    width: 131px;
+    height: 400px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    vertical-align: top;
+}
+
+#frente{
+    width: 180px;
+    height: 400px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+#deleted-button{
+    border-radius: 50% !important;
+}
+
+.undo-button{
+    border-radius: 50% !important;
+    margin-bottom: 5px;
+}
+
+#imagenes-draw{
+    margin-top: 10px;
 }

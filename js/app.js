@@ -67,7 +67,7 @@ function addElement(){
                 </div>
                 <div>
                     <br>
-                    <div class="col-md-3"><button  onclick="deletedElement(this)" name="element-completed${cantElement}" typle="button" class="btn btn-danger justify-content-md-end"><i class="fas fa-trash-alt"></i></button></div>
+                    <div class="col-md-3"><button  onclick="deletedElement(this)" name="element-completed${cantElement}" typle="button" id="deleted-button" class="btn btn-danger justify-content-md-end"><i class="fas fa-trash-alt"></i></button></div>
                 </div>
             </div>
             `);
@@ -106,17 +106,6 @@ function deletedElement(item) {
 
 
 
-let signaturePad = null;
+//let signaturePad = null;
 
 
-window.addEventListener('load',async() =>{
-
-    const canvas = document.getElementById("signature-canvas-derecho");
-    canvas.height = canvas.offsetHeight
-    canvas.whidth = canvas.offsetWidth
-
-    signaturePad = new SignaturePad(canvas,{});
-
-   
-
-});
