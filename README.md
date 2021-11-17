@@ -1,3 +1,0 @@
-# inspeccion
-inspeccion Far
-qwdqd

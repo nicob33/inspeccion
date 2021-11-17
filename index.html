@@ -15,157 +15,124 @@
 <body>
     <div class="container mt-1">
         <div class="row">
-            <div class="col-md-11">
+            <div class="">
                 <img src="img/logo-far.png" class="rounded float-end" id="logo-far">
                 <h3 id="titulo">INSPECCION</h3>
                 <br>
-                <p id="motivo-inspec"><b>MOTIVO DE INSPECCION: </b>Seguro nuevo</p>
+                <br>
                 <hr>
-                <form id="form">
-                    
+                <form id="form" action="success.html">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            VEHICULO
-                          </button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                VEHICULO
+                            </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" >
-                          <div class="accordion-body">
-                            <table class="table table-bordered border-dark">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Marca</th>
-                                        <th scope="col">Modelo</th>
-                                        <th scope="col">Matricula</th>
-                                        <th scope="col">Padrón</th>
-                                        <th scope="col">Combustible</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Suzuki</td>
-                                        <td>Celerio</td>
-                                        <td>SNA5698</td>
-                                        <td>2154252525</td>
-                                        <td>NAFTA</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="table table-bordered border-dark next-table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">N° de motor</th>
-                                        <th scope="col">N° de chasis</th>
-                                        <th scope="col">Color</th>
-                                        <th scope="col">Kilometraje</th>
-                                        <th scope="col">C.C<sup>3</sup></th>
-                                        <th scope="col">Año</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1242353463</td>
-                                        <td>34363636634</td>
-                                        <td>Blanco</td>
-                                        <td>89000</td>
-                                        <td>124</td>
-                                        <td>2015</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="table table-bordered border-dark">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Localidad</th>
-                                        <th scope="col">Departamento</th>
-                                        <th scope="col">Cód. Postal</th>
-                                        <th scope="col">Teléfono</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Uruguay</td>
-                                        <td>Montevideo</td>
-                                        <td>11600</td>
-                                        <td>094102388</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="table table-bordered border-dark">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Uso de vehículo</th>
-                                        <th scope="col">N° de puertas</th>
-                                        <th scope="col">Tipo de transporte</th>
-                                        <th scope="col">Tipo de vehículo</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Particular</td>
-                                        <td>Cinco puertas</td>
-                                        <td>Personas</td>
-                                        <td>Sedan</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    
-                      <hr>
-
-
-
-                    <h4 id="averias">AVERIAS</h4>
-                    <div id="averias-element">
-                        <div class="row mb-3" id="element-completed1">
-                            <div class="col-mb-3">
-                                <label for="select-element1" class="form-label">ELEMENTO</label>
-                                <select id="select-element1" class="form-select" onchange="elegir1()">
-                                    <option value="Nada">-- Seleccione un elemento --</option>
-                                    <option value="Capó">Capó</option>
-                                    <option value="Faro derecho">Faro derecho</option>
-                                    <option value="Faro izquierdo">Faro izquierdo</option>
-                                    <option value="Faro/señalero del. der.">Faro/señalero del. der.</option>
-                                    <option value="Faro/señalero del. izq.">Faro/señalero del. izq.</option>
-                                    <option value="Panel delantero">Panel delantero</option>
-                                    <option value="Paragolpes delantero">Paragolpes delantero</option>
-                                    <option value="Careta">Careta</option>
-                                    <option value="Guardabarro del. derecho">Guardabarro del. derecho</option>
-                                    <option value="Puerta del. derecha">Puerta del. derecha</option>
-                                    <option value="Puerta tras. derecha">Puerta tras. derecha</option>
-                                    <option value="Lateral derecho">Lateral derecho</option>
-                                    <option value="Zócalo derecho">Zócalo derecho</option>
-                                    <option value="Guardabarro tras. derecho">Guardabarro tras. derecho</option>
-                                    <option value="Puerta baúl/portón trasero">Puerta baúl/portón trasero</option>
-                                    <option value="Panel trasero">Panel trasero</option>
-                                    <option value="Faro/señalero tras.der.">Faro/señalero tras.der.</option>
-                                    <option value="Faro/señalero tras.izq">Faro/señalero tras.izq</option>
-                                    <option value="Guardabarro tras. izq.">Guardabarro tras. izq.</option>
-                                    <option value="Zócalo izquierdo">Zócalo izquierdo</option>
-                                    <option value="Lateral izquierdo">Lateral izquierdo</option>
-                                    <option value="Puerta tras. izquierda">Puerta tras. izquierda</option>
-                                    <option value="Puerta del. izquierda">Puerta del. izquierda</option>
-                                    <option value="Guardabarro de. izquierdo">Guardabarro de. izquierdo</option>
-                                    <option value="Techo / Capota">Techo / Capota</option>
-                                    <option value="Pintura generañ">Pintura generañ</option>
-                                </select>
-                            </div>
-                            <div id="datos-element1">
-                            </div>
-                            <div id="borrar-element1">
+                            <div class="accordion-body">
+                                <table class="table table-bordered border-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Marca</th>
+                                            <th scope="col">Modelo</th>
+                                            <th scope="col">Matricula</th>
+                                            <th scope="col">Padrón</th>
+                                            <th scope="col">Combustible</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Suzuki</td>
+                                            <td>Celerio</td>
+                                            <td>SNA5698</td>
+                                            <td>2154252525</td>
+                                            <td>NAFTA</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-bordered border-dark next-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">N° de motor</th>
+                                            <th scope="col">N° de chasis</th>
+                                            <th scope="col">Color</th>
+                                            <th scope="col">Kilometraje</th>
+                                            <th scope="col">C.C<sup>3</sup></th>
+                                            <th scope="col">Año</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1242353463</td>
+                                            <td>34363636634</td>
+                                            <td>Blanco</td>
+                                            <td>89000</td>
+                                            <td>124</td>
+                                            <td>2015</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-bordered border-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Localidad</th>
+                                            <th scope="col">Departamento</th>
+                                            <th scope="col">Cód. Postal</th>
+                                            <th scope="col">Teléfono</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Uruguay</td>
+                                            <td>Montevideo</td>
+                                            <td>11600</td>
+                                            <td>094102388</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-bordered border-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Uso de vehículo</th>
+                                            <th scope="col">N° de puertas</th>
+                                            <th scope="col">Tipo de transporte</th>
+                                            <th scope="col">Tipo de vehículo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Particular</td>
+                                            <td>Cinco puertas</td>
+                                            <td>Personas</td>
+                                            <td>Sedan</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                    <br>
-                    <div class="d-grid gap-2 col-6 mx-auto" id="add-element">
+                    <p id="motivo-inspec"><b>MOTIVO DE INSPECCION: </b></p>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label for="inlineRadio1" class="form-check-label">Seguro Nuevo</label>
                     </div>
-                    
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label for="inlineRadio2" class="form-check-label">Cambio de Vehículo</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label for="inlineRadio3" class="form-check-label">Rehabilitacion</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                        <label for="inlineRadio4" class="form-check-label">Exclusión de Averias</label>
+                    </div>
+                    <hr>
                     <span class="d-block pb-2" id="preseg"><b>PRE SEGURO</b> (Averías que no se tendran en cuenta en futuras reclamaciones de los daños del vehículo, marcar con un círculo...) </span>
                     <div id="imagenes-draw">
                     <div id="costado">
-                        <canvas id="signature-canvas-derecho"></canvas>
+                        <canvas id="signature-canvas-derecho" ></canvas>
                         <button onClick="clearDerecho()" class="btn btn-primary undo-button" type="button" id="undo-der"><i class="fas fa-undo-alt"></i></button>
                         <canvas id="signature-canvas-izquierdo"></canvas>
                         <button onClick="clearIzquierdo()" class="btn btn-primary undo-button" type="button" id="undo-izq"><i class="fas fa-undo-alt"></i></button>
@@ -173,7 +140,6 @@
                     <div id="techo">
                         <canvas id="signature-canvas-techo"></canvas>
                         <button onClick="clearTecho()" class="btn btn-primary undo-button" type="button" id="undo-techo"><i class="fas fa-undo-alt"></i></button>
-                        
                     </div>
                     <div id="frente">
                         <canvas id="signature-canvas-posterior"></canvas>
@@ -181,10 +147,426 @@
                         <canvas id="signature-canvas-frontal"></canvas>
                         <button onClick="clearFrontal()" class="btn btn-primary undo-button" type="button" id="undo-front"><i class="fas fa-undo-alt"></i></button>
                     </div>
+                <!-- </div> -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingAver">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAver" aria-expanded="true" aria-controls="collapseAver">
+                            AVERIAS
+                        </button>
+                    </h2>
+                    <div id="collapseAver" class="accordion-collapse collapse show" aria-labelledby="headingAver" >
+                        <div class="accordion-body">
+                            <div id="averias-element">
+                                <div class="row mb-3" id="element-completed1">
+                                    <div class="col-mb-3">
+                                        <label for="select-element1" class="form-label">ELEMENTO</label>
+                                        <select id="select-element1" class="form-select" onchange="elegir1()">
+                                            <option value="Nada">-- Seleccione un elemento --</option>
+                                            <option value="Capó">Capó</option>
+                                            <option value="Faro derecho">Faro derecho</option>
+                                            <option value="Faro izquierdo">Faro izquierdo</option>
+                                            <option value="Faro/señalero del. der.">Faro/señalero del. der.</option>
+                                            <option value="Faro/señalero del. izq.">Faro/señalero del. izq.</option>
+                                            <option value="Panel delantero">Panel delantero</option>
+                                            <option value="Paragolpes delantero">Paragolpes delantero</option>
+                                            <option value="Careta">Careta</option>
+                                            <option value="Guardabarro del. derecho">Guardabarro del. derecho</option>
+                                            <option value="Puerta del. derecha">Puerta del. derecha</option>
+                                            <option value="Puerta tras. derecha">Puerta tras. derecha</option>
+                                            <option value="Lateral derecho">Lateral derecho</option>
+                                            <option value="Zócalo derecho">Zócalo derecho</option>
+                                            <option value="Guardabarro tras. derecho">Guardabarro tras. derecho</option>
+                                            <option value="Puerta baúl/portón trasero">Puerta baúl/portón trasero</option>
+                                            <option value="Panel trasero">Panel trasero</option>
+                                            <option value="Faro/señalero tras.der.">Faro/señalero tras.der.</option>
+                                            <option value="Faro/señalero tras.izq">Faro/señalero tras.izq</option>
+                                            <option value="Guardabarro tras. izq.">Guardabarro tras. izq.</option>
+                                            <option value="Zócalo izquierdo">Zócalo izquierdo</option>
+                                            <option value="Lateral izquierdo">Lateral izquierdo</option>
+                                            <option value="Puerta tras. izquierda">Puerta tras. izquierda</option>
+                                            <option value="Puerta del. izquierda">Puerta del. izquierda</option>
+                                            <option value="Guardabarro de. izquierdo">Guardabarro de. izquierdo</option>
+                                            <option value="Techo / Capota">Techo / Capota</option>
+                                            <option value="Pintura generañ">Pintura general</option>
+                                        </select>
+                                    </div>
+                                    <div id="datos-element1">
+                                    </div>
+                                    <div id="borrar-element1">
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-grid gap-2 col-6 mx-auto" id="add-element">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    
+                <hr>
+                <span class="d-block pb-2" id="parabrisas-visto-int"><b>PARABRISAS VISTO DESDE EL INTERIOR</b></span>
+                <div id="parabrisas-canvas">
+                    <button onClick="clearParabrisas()" class="btn btn-primary undo-button" type="button" id="undo-parabrisas"><i class="fas fa-undo-alt"></i></button>
+                    <canvas id="signature-canvas-parabrisas"></canvas>
+                    <span id="conductor">CONDUCTOR</span><span id="acompañante">ACOMPAÑANTE</span>
+                </div>
+                <div id="parabrisas-problemas">
+                    <span>Presenta daños?</span>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="daños" id="daño-si" value="option1">
+                        <label for="daño-si" class="form-check-label">Si</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="daños" id="daño-no" value="option2">
+                        <label for="daño-no" class="form-check-label">No</label>
+                    </div>
+                    <br>
+                    <span>Dificultan la visibilidad del conductor?</span>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="dificultad" id="dificultad-si" value="option1">
+                        <label for="dificultad-si" class="form-check-label">Si</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="dificultad" id="dificultad-no" value="option2">
+                        <label for="dificultad-no" class="form-check-label">No</label>
+                    </div>
+                </div>
+                <br>
+                <p>Cuando la respuesta es SI, <b><u>EL VEHICULO NO ES ASEGURABLE</b></u></p>
+                <p>Si las averías están en otras zonas del cristal, dibuje correctamente las mismas y fije la depreciacion 100%</p>
+                <div class="mb-3">
+                    <label for="observaciones-input" class="form-label"><b>OBSERVACIONES:</b></label>
+                    <textarea class="form-control" id="observaciones-input" rows="3"></textarea>
+                </div>
+                <hr>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEstGen">
+                        <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseEstGen" aria-expanded="true" aria-controls="collapseEstGen">
+                            ESTADO GENERAL DEL VEHICULO
+                        </button>
+                    </h2>
+                    <div id="collapseEstGen" class="accordion-collapse collapse show" aria-labelledby="headingEstGen" >
+                        <div class="accordion-body">
+                            <table class="table table-bordered border-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2" style="border-top: none !important;"></th>
+                                        <th scope="col">Bueno</th>
+                                        <th scope="col">Malo</th>
+                                        <th scope="col">Regular</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="4" class="name-col"><b>CARROCERÍA</b></td>
+                                        <td>Chapa</td>
+                                        <td><input type="radio" class="form-check-input" name="chapa" id="chapa-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="chapa" id="chapa-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="chapa" id="chapa-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pintura</td>
+                                        <td><input type="radio" class="form-check-input" name="pintura" id="pintura-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="pintura" id="pintura-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="pintura" id="pintura-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Careta</td>
+                                        <td><input type="radio" class="form-check-input" name="careta" id="careta-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="careta" id="careta-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="careta" id="careta-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cierre de puertas</td>
+                                        <td><input type="radio" class="form-check-input" name="cierre-puertas" id="cierre-puertas-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="cierre-puertas" id="cierre-puertas-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="cierre-puertas" id="cierre-puertas-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="5" class="name-col"><b>LUCES</b></td>
+                                        <td>Cortas</td>
+                                        <td><input type="radio" class="form-check-input" name="cortas" id="cortas-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="cortas" id="cortas-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="cortas" id="cortas-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Largas</td>
+                                        <td><input type="radio" class="form-check-input" name="largas" id="largas-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="largas" id="largas-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="largas" id="largas-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Señaleros</td>
+                                        <td><input type="radio" class="form-check-input" name="señaleros" id="señaleros-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="señaleros" id="señaleros-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="señaleros" id="señaleros-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Freno</td>
+                                        <td><input type="radio" class="form-check-input" name="freno" id="freno-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="freno" id="freno-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="freno" id="freno-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Baliza</td>
+                                        <td><input type="radio" class="form-check-input" name="baliza" id="baliza-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="baliza" id="baliza-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="baliza" id="baliza-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4" class="name-col"><b>ACCESORIOS</b></td>
+                                        <td>Limpia parabrisas</td>
+                                        <td><input type="radio" class="form-check-input" name="limpia-parabrisas" id="limpia-parabrisas-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="limpia-parabrisas" id="limpia-parabrisas-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="limpia-parabrisas" id="limpia-parabrisas-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Escobillas</td>
+                                        <td><input type="radio" class="form-check-input" name="escobillas" id="escobillas-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="escobillas" id="escobillas-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="escobillas" id="escobillas-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Espejo interior</td>
+                                        <td><input type="radio" class="form-check-input" name="espejo-interior" id="espejo-interior-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="espejo-interior" id="espejo-interior-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="espejo-interior" id="espejo-interior-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Espejos retrovisores</td>
+                                        <td><input type="radio" class="form-check-input" name="espejos-retrovisores" id="espejos-retrovisores-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="espejos-retrovisores" id="espejos-retrovisores-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="espejos-retrovisores" id="espejos-retrovisores-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2" class="name-col"><b>TAPIZADO</b></td>
+                                        <td>Estado gral. tapizado</td>
+                                        <td><input type="radio" class="form-check-input" name="est-gen-tap" id="est-gen-tap-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="est-gen-tap" id="est-gen-tap-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="est-gen-tap" id="est-gen-tap-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cint. de seguridad</td>
+                                        <td><input type="radio" class="form-check-input" name="cint-de-seg" id="cint-de-seg-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="cint-de-seg" id="cint-de-seg-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="cint-de-seg" id="cint-de-seg-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="name-col"><b>VIDRIOS</b></td>
+                                        <td>Estado gral. vidrios</td>
+                                        <td><input type="radio" class="form-check-input" name="est-gen-vidrios" id="est-gen-vidrios-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="est-gen-vidrios" id="est-gen-vidrios-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="est-gen-vidrios" id="est-gen-vidrios-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2" class="name-col"><b>FRENOS</b></td>
+                                        <td>Delanteros / traseros</td>
+                                        <td><input type="radio" class="form-check-input" name="delan-tras" id="delan-tras-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="delan-tras" id="delan-tras-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="delan-tras" id="delan-tras-r" value="option3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>De mano</td>
+                                        <td><input type="radio" class="form-check-input" name="de-mano" id="de-mano-b" value="option1" checked></td>
+                                        <td><input type="radio" class="form-check-input" name="de-mano" id="de-mano-m" value="option2"></td>
+                                        <td><input type="radio" class="form-check-input" name="de-mano" id="de-mano-r" value="option3"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <span><b>Computest vto:</b></span> <input type="date" name="" id="computest">
+                <br>
+                <br>
+                <div class="mb-3">
+                    <label for="comentarios-gen-veh" class="form-label"><b>Comentarios generales del estado del vehículo:</b></label>
+                    <textarea class="form-control" id="comentarios-gen-veh" rows="3"></textarea>
+                </div>
+                <hr>
 
 
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingCosas">
+                        <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseCosas" aria-expanded="true" aria-controls="collapseCosas">
+                        </button>
+                    </h2>
+                    <div id="collapseCosas" class="accordion-collapse collapse show" aria-labelledby="headingCosas" >
+                        <div class="accordion-body">
+                            <table class="table table-bordered border-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2">CERRADURAS PUERTAS</th>
+                                        <th>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="cerrad-puert" id="cerrad-puert-b" value="option1" checked>
+                                                <label for="cerrad-puert-b" class="form-check-label">BIEN</label>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="cerrad-puert" id="cerrad-puert-m" value="option2">
+                                                <label for="cerrad-puert-m" class="form-check-label">MAL</label>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2">COMBUSTIBLE</th>
+                                        <th>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="combus-tipo" id="combus-tipo-n" value="option1" checked>
+                                                <label for="combus-tipo-n" class="form-check-label">NAFTA</label>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="combus-tipo" id="combus-tipo-d" value="option2">
+                                                <label for="combus-tipo-d" class="form-check-label">DIESEL</label>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2">OBSERVACIONES AL DORSO</th>
+                                        <th>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="obs-al-dorso" id="obs-al-dorso-si" value="option1">
+                                                <label for="obs-al-dorso-si" class="form-check-label">Si</label>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="obs-al-dorso" id="obs-al-dorso-no" value="option2" checked>
+                                                <label for="obs-al-dorso-no" class="form-check-label">No</label>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <table class="table table-bordered border-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="4">NEUMATICOS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align: middle;" >MARCA</td>
+                                        <td colspan="3"><input type="text" class="form-control" id="marca-input"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: middle;" >CANTIDAD</td>
+                                        <td colspan="3"><input type="text" class="form-control" id="cantidad-input"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: middle;" >DESGASTE %</td>
+                                        <td colspan="3"><input type="text" class="form-control" id="desgaste-input"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeg">
+                        <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeg" aria-expanded="true" aria-controls="collapseSeg">
+                            SEGURIDAD
+                        </button>
+                    </h2>
+                    <div id="collapseSeg" class="accordion-collapse collapse show" aria-labelledby="headingSeg" >
+                        <div class="accordion-body">
+                            <table class="table table-bordered border-dark">
+                                <tbody>
+                                    <tr>
+                                        <td scope="col" class="colum-segu" >1- Multi-lock c/ chicharra</td>
+                                        <td>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="multi-l-c" id="multi-l-c-s" value="option1">
+                                                <label for="multi-l-c-s" class="form-check-label">SI</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="multi-l-c" id="multi-l-c-n" value="option2" checked>
+                                                <label for="multi-l-c-n" class="form-check-label">NO</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col" class="colum-segu">2- Alarma pasiva</td>
+                                        <td>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="alarma-pasiva" id="alarma-pasiva-s" value="option1">
+                                                <label for="alarma-pasiva-s" class="form-check-label">SI</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="alarma-pasiva" id="alarma-pasiva-n" value="option2" checked>
+                                                <label for="alarma-pasiva-n" class="form-check-label">NO</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col" class="colum-segu">3- Otros</td>
+                                        <td>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="otros" id="otros-s" value="option1" >
+                                                <label for="otros-s" class="form-check-label">SI</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="otros" id="otros-n" value="option2" checked>
+                                                <label for="otros-n" class="form-check-label">NO</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col" class="colum-segu" style="vertical-align: middle">Tipo:</td>
+                                        <td colspan="2"><input type="text" class="form-control" id="cantidad-input"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingInspec">
+                        <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseInspec" aria-expanded="true" aria-controls="collapseInspec">
+                            DATOS DEL INSPECTOR
+                        </button>
+                    </h2>
+                    <div id="collapseInspec" class="accordion-collapse collapse show" aria-labelledby="headingInspec" >
+                        <div class="accordion-body">
+                            <div class="mb-3">
+                                <label for="input-nombre-apellido" class="form-label">Nombre y Apellido</label>
+                                <input type="text" class="form-control" id="input-nombre-apellido" placeholder="nombre y apellido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="input-direccion" class="form-label">Dirección de la Inspección</label>
+                                <input type="text" class="form-control" id="input-direccion" placeholder="Dirección de la Inspección">
+                            </div>
+                            <div class="mb-3">
+                                <label for="input-telefono" class="form-label">Teléfono</label>
+                                <input type="text" class="form-control" id="input-telefono" placeholder="Teléfono">
+                            </div>
+                            <p>Firma</p>
+                            <div id="firma-canvas">
+                                <canvas id="signature-canvas-firma"></canvas>
+                                <button onClick="clearFirma()" class="btn btn-primary undo-button" type="button" id="undo-firma"><i class="fas fa-undo-alt"></i></button>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+                <hr>
                 </form>
             </div>
 
@@ -192,6 +574,7 @@
     </div>
     <script src="js/app.js"></script>
     <script src="js/canvas.js"></script>
+    <script src="js/jspdf.min.js"></script>
 </body>
 
 </html>

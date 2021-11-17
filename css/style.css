@@ -7,6 +7,11 @@
 
 }
 
+#motivo-inspec{
+    display: inline-block;
+    
+}
+
 #averias{
     text-align: center;
 }
@@ -15,7 +20,7 @@ th,td{
     text-align: center;
 }
 
-#preseg{
+#preseg,#parabrisas-visto-int{
     text-align: center;
 }
 
@@ -61,13 +66,37 @@ th,td{
     background-image: url(../img/techo.jpg) ;
 }
 
+#signature-canvas-parabrisas{
+    border: 1px solid black;
+    width: 500px;
+    height: 200px;
+    cursor: crosshair;
+    background-color: white ;
+}
+
+#signature-canvas-firma{
+    border: 1px solid black;
+    width: 500px;
+    height: 200px;
+    cursor: crosshair;
+    background-color: white ;
+}
+
+#firma-canvas{
+    width: 500px;
+    height: 250px;
+    display: inline-block;
+    margin-right: 150px;
+    vertical-align: top;
+}
+
 
 #costado{
     width: 274px;
     height: 400px;
     display: inline-block;
     margin-right: 80px;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 
 #techo{
@@ -75,15 +104,29 @@ th,td{
     height: 400px;
     display: inline-block;
     margin-top: 40px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 180px;
+    margin-right: 150px;
     vertical-align: top;
+}
+
+#parabrisas-canvas{
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-right: 150px;
+    vertical-align: top;
+}
+
+#acompañante{
+    margin-left: 290px;
 }
 
 #frente{
     width: 180px;
     height: 400px;
-    margin-left: 80px;
+    margin-left: 150px;
     margin-right: 80px;
     display: inline-block;
     vertical-align: top;
@@ -101,4 +144,33 @@ th,td{
 
 #imagenes-draw{
     margin-top: 10px;
+
+}
+
+#h1-inspec {
+    text-align: center;
+
+}
+
+#check-success{
+    text-align: center;
+    font-size: 70px;
+    color: green;
+    margin-top: 15%;
+    margin-bottom: 15px;
+
+}
+
+#parabrisas-problemas{
+    margin-left: 30%;
+}
+
+.name-col{
+    vertical-align: middle;
+    background-color: rgb(177, 177, 177) !important;
+}
+
+.colum-segu{
+    text-align: left;
+    padding-right: 0px !important ;
 }
